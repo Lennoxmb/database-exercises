@@ -21,6 +21,7 @@ INSERT INTO albums (artist, name, release_date, sales, genre)
         ('Adele', '21', 2011, 27.1,'Pop, soul'),
         ('The Beatles', '1', 2000, 23.2,'Rock'),
         ('Metallica', 'Metallica', 1991, 22.7,'Heavy metal'),
+        ('Witney Houston', 'Witney Houston', 1985, 17.6, 'Pop, R&B'),
         ('Celine Dion', 'Let''s Talk About Love',1997,20.5, 'Pop'),
         ('Bob Marley & The Wailers', 'Legend: The Best of Bob Marley & The Wailers', 1984,22.9, 'Reggae'),
         ('Guns N'' Roses', 'Appetite for Destruction', 1987,22.8, 'Hard rock'),
