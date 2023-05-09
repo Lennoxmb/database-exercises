@@ -148,3 +148,18 @@ FROM salaries s JOIN dept_emp de ON s.emp_no = de.emp_no
 WHERE d.dept_name = 'Research'
   AND s.to_date = '9999-01-01'
 ORDER BY salary DESC;
+
+# select birth_date from employees
+#                   WHERE emp_no  IN (44995, 483489, 42894);
+
+SELECT emp_no FROM dept_manager;
+
+SELECT CONCAT(first_name, ' ', last_name) AS name, birth_date FROM employees
+WHERE emp_no IN (SELECT emp_no FROM dept_manager);
+
+USE bigfoot_test_db;
+
+INSERT INTO users_albums (user_id, album_id) VALUES (
+                                                     (SELECT id FROM users WHERE username = 'lisa_green'),
+                                                     (SELECT id FROM albums WHERE artist = 'The Immaculate Collections')
+);
